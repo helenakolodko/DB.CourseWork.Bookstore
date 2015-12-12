@@ -1,0 +1,202 @@
+﻿* {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html ,body{
+	height: 100%;
+}
+
+body {
+    background-color: #656565;
+	padding-top: 40px;
+}
+
+.row-fluid {
+    overflow: hidden;
+}	
+
+
+.wrapper{
+	position: relative;
+	background-image: url('/Content/images/library.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 100%;
+	margin: 0 auto -75px; 
+}
+
+.navbar {
+	min-height:40px;
+	border-width: 0;
+	background-color: #ddd;
+}
+
+.navbar-nav a {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding: 0 15px;
+    line-height: 40px;
+    height: 40px;
+}
+
+.navbar-nav > li:hover{
+    background-color:  #d7d7d7;
+}
+
+.navbar-brand > img {
+    display:initial;
+}
+
+.navbar-toggle {
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 40px;
+}
+
+.page-header {
+	margin: 0;
+}
+
+.form {
+    margin-bottom: 35px;
+}
+
+.logo {
+    -webkit-filter: grayscale(100%);
+}
+
+.logo:hover {
+    -webkit-filter: grayscale(0%);
+}
+
+.content {
+    background-color: #f1f1f1;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	padding: 15px;	
+}
+
+.btn-info {
+	background-color: #aeaeae;
+	border-color:  #9c9c9c;
+}
+
+.sections{
+    text-align: center;
+	border-radius: 5px;	
+}
+.content h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.well{
+	background-color: #f9f9f9;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.comment-header {
+	margin: 0 15px 5px 15px;
+}
+
+.avatar-sm {
+	height: 120px;
+	margin-bottom: 15px;
+}
+
+.jumbotron {
+	background-color: transparent;
+	margin: 0;
+}
+
+
+.jumbotron .container {
+    position: relative;
+    top: 40px;
+    text-align: right;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+	text-shadow: 3px 3px 7px rgba(70, 70, 70, 1);
+}
+
+.jumbotron p {
+    font-size: 20px;
+    color: #fff;
+	text-shadow: 3px 3px 7px rgba(70, 70, 70, 1);
+}
+
+.jumbotron a {
+    font-size: 18px;
+    color: #b1bcd5;
+	text-shadow: 4px 4px 5px #656565;
+}
+
+.footer, .push {
+	height: 75px; 
+}
+.footer{
+	position: relative;
+	margin: 0 auto;
+    background-color: #fff;
+}
+
+.footer a{
+	padding-right: 10px;
+}
+
+.footer .container {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+

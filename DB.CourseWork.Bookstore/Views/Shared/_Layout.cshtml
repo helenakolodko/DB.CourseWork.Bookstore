@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="wrapper row-fluid main-body ">
+        <div class="navbar navbar-default navbar-fixed-top	">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+                        Bookstore
+                    </a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Users", "Index", "User")</li>
+                        <li>@Html.ActionLink("Products", "Index", "Section")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+
+        <div class="container content">
+            @RenderBody()
+        </div>
+
+        <div class="push"></div>
+    </div>
+    <div class="row-fluid footer">
+        <div class="container">
+            <div class="pull-left">Copyright &copy; 2015<br>Hello to everyone</div>
+            <a href="#" class="pull-right"><img class="logo" src="~/Content/images/Facebook-icon.png" alt="Facebook"></a>
+            <a href="#" class="pull-right"><img class="logo" src="~/Content/images/Twitter-icon.png" alt="Twitter"></a>
+            <a href="#" class="pull-right"><img class="logo" src="~/Content/images/GooglePlus-icon.png" alt="GooglePlus"></a>
+            <a href="#" class="pull-right"><img class="logo" src="~/Content/images/Rss-icon.png" alt="Rss"></a>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/js")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
